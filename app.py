@@ -241,7 +241,7 @@ HTML_TEMPLATE = """
                 <span class="pill-btn btn-online"><i class="fas fa-circle" style="font-size: 8px;"></i> ONLINE</span>
                 <button onclick="location.reload()" class="pill-btn btn-refresh"><i class="fas fa-sync-alt"></i> Refresh</button>
                 {% if request.path == '/dashboard' %}
-                    <a href="https://t.me/AdityaXcyber" target="_blank" class="pill-btn btn-support"><i class="fab fa-telegram-plane"></i> Support</a>
+                    <a href="https://t.me/rapro17" target="_blank" class="pill-btn btn-support"><i class="fab fa-telegram-plane"></i> Support</a>
                     <a href="/logout" class="pill-btn btn-logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
                 {% else %}
                     <a href="/dashboard" class="pill-btn btn-refresh"><i class="fas fa-home"></i> Dashboard</a>
@@ -438,7 +438,7 @@ HTML_TEMPLATE = """
         {% endif %}
         
         <div class="footer">
-            Credit: <span style="color: #f97316;">@Aditya_dark0</span> • <a href="https://t.me/AdityaXcyber" target="_blank" style="color:#3b82f6;text-decoration:none;">Channel</a>
+            Credit: <span style="color: #f97316;">@radevil1</span> • <a href="https://t.me/rapro17" target="_blank" style="color:#3b82f6;text-decoration:none;">Channel</a>
         </div>
     {% endif %}
 </div>
@@ -455,7 +455,7 @@ HTML_TEMPLATE = """
 def index():
     if not session.get('root_logged_in'):
         return app.response_class(
-            response=json.dumps({"status": "API is Active", "Credit": {"Username": "@Aditya_dark0", "Channel": "https://t.me/AdityaXcyber"}}, ensure_ascii=False),
+            response=json.dumps({"status": "API is Active", "Credit": {"Username": "@radevil1", "Channel": "https://t.me/rapro17"}}, ensure_ascii=False),
             status=200,
             mimetype='application/json; charset=utf-8'
         )
@@ -768,7 +768,7 @@ def api_endpoint():
                     "rapro17¹", "https://t.me/rapro17"
                 ]
                 for word in restricted_words:
-                    raw_text = raw_text.replace(word, "@Aditya_dark0")
+                    raw_text = raw_text.replace(word, "@radevil1")
                     
                 data = json.loads(raw_text)
                 
